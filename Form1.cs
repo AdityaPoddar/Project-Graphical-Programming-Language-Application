@@ -89,6 +89,7 @@ namespace ASE_Shape_Programming_language
                 holdValue.Reset();
                 Refresh();
             }
+
             else
             {
                 output.Text = "The command given is invalid.";
@@ -119,7 +120,7 @@ namespace ASE_Shape_Programming_language
 
         private void loadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            instruction.Text = "";//restting the vlaue of cmdtext to be empty
+            instruction.Text = "";//restting the value of cmdtext to be empty
 
             storeFile = new FileLoadAndWrite().LoadFile();//assigning the file value to the arraylist
 
@@ -132,6 +133,12 @@ namespace ASE_Shape_Programming_language
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FileLoadAndWrite().WriteFile(instruction.Text);//creating a new file with the name that the user provided where all the text present inside the cmdText box is present
+        }
+      
+
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

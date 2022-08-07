@@ -17,7 +17,7 @@ namespace ASE_Shape_Programming_language
         /// </summary>
         public Shape()
         {
-            colour = Color.Red;
+            colour = Color.Black;
             x = y = 100;
         }
         /// <summary>
